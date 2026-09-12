@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Number System Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="calculator">
+      <h1>Number System Calculator</h1>
+
+      <label>Convert From:</label>
+      <select id="fromBase">
+        <option value="10">Decimal</option>
+        <option value="2">Binary</option>
+        <option value="8">Octal</option>
+        <option value="16">Hexadecimal</option>
+      </select>
+
+      <label>Convert To:</label>
+      <select id="toBase">
+        <option value="10">Decimal</option>
+        <option value="2">Binary</option>
+        <option value="8">Octal</option>
+        <option value="16">Hexadecimal</option>
+      </select>
+
+      <label>Enter Number:</label>
+      <input type="text" id="inputNumber" value="0" />
+
+      <button onclick="convertNumber()">Convert</button>
+
+      <label>Result:</label>
+      <input type="text" id="result" readonly />
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
